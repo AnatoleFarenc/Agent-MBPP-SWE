@@ -1,0 +1,35 @@
+[project]
+name = "agent-smith"
+version = "0.1.0"
+description = "Add your description here"
+readme = "README.md"
+authors = [
+    { name = "anate", email = "anatole.farenc2002@gmail.com" },
+    { name = "tod"},
+    { name = "alix"}
+]
+requires-python = ">=3.10"
+dependencies = [
+    "fire>=0.7.1",
+    "flake8",
+    "mcp<2",
+    "mypy",
+    "openai>=3.35.1",
+    "pydantic",
+    "mcp[cli]<2",
+    "python-dotenv>=1.2.4",
+    "requests>=2.34.2",
+]
+
+[tool.uv]
+package = true
+
+[project.scripts]
+sandbox = "src.sandbox.cli:main"
+
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
+
+[tool.hatch.build.targets.wheel]
+packages = ["src"]
