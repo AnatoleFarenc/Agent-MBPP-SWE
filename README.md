@@ -1,4 +1,4 @@
-*This project was created by alsimoni, anfarenc, tmoga.*
+*This project was created by Alix Simoni, Anatole Farenc, Theaud Moga.*
 
 > « Never send a human to do a machine's job. » — Agent Smith, *The Matrix* (1999)
 
